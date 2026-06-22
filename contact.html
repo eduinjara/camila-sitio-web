@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto — Camila Jaramillo. Hablemos de tu próximo proyecto.">
+  <title>Contacto — Camila Jaramillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <input type="checkbox" id="menuToggle" class="menu-toggle">
+  <nav>
+    <div class="hero-nav-inner">
+      <a href="index.html" class="hero-logo">CJ</a>
+      <label for="menuToggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="hero-menu-wrapper">
+        <div class="hero-menu-line"></div>
+        <ul class="hero-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="index.html#brands">Brands</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="hero-contact-btn">
+        <span class="hero-contact-dot"></span>
+        CONTACT
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <h1 class="contact__hero"><span>CONTACT</span></h1>
+      <div class="contact__body">
+        <p class="contact__label">CONTACT ME ON</p>
+        <nav class="contact__links">
+          <a href="#" class="contact__link">EMAIL</a>
+          <a href="#" class="contact__link">INSTAGRAM</a>
+          <a href="#" class="contact__link">FACEBOOK</a>
+          <a href="#" class="contact__link">LINKEDIN</a>
+          <a href="#" class="contact__link">DRIBBBLE</a>
+          <a href="#" class="contact__link">BEHANCE</a>
+          <a href="#" class="contact__link">FRAMER</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col footer-col--info">
+          <p class="footer-address">Cl. 10 # 2-43</p>
+          <p class="footer-address">Bogotá, Colombia</p>
+          <a href="mailto:hola@camilajaramillo.com" class="footer-email">hola@camilajaramillo.com</a>
+        </div>
+        <nav class="footer-col footer-col--nav">
+          <a href="index.html" class="footer-nav-link">Home</a>
+          <a href="index.html#stats" class="footer-nav-link">About</a>
+          <a href="project.html" class="footer-nav-link">Projects</a>
+          <a href="contact.html" class="footer-nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-middle">
+        <p class="footer-copy">&copy; 2026 Camila Jaramillo. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link">Instagram</a>
+          <a href="#" class="footer-social-link">LinkedIn</a>
+          <a href="#" class="footer-social-link">Dribbble</a>
+          <a href="#" class="footer-social-link">Behance</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-masthead">Camila Jaramillo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('.hero-nav-inner');
+    window.addEventListener('scroll', () => {
+      nav.style.background = window.scrollY > 80 ? 'rgba(0,0,0,0.7)' : 'transparent';
+      nav.style.backdropFilter = window.scrollY > 80 ? 'blur(12px)' : 'none';
+      nav.style.borderBottom = window.scrollY > 80 ? '1px solid rgba(255,255,255,0.05)' : 'none';
+    });
+  </script>
+
+</body>
+</html>

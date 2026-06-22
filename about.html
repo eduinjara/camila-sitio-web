@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About — Camila Jaramillo. Content Creator & UGC Specialist.">
+  <title>About — Camila Jaramillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <input type="checkbox" id="menuToggle" class="menu-toggle">
+  <nav>
+    <div class="hero-nav-inner">
+      <a href="index.html" class="hero-logo">CJ</a>
+      <label for="menuToggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="hero-menu-wrapper">
+        <div class="hero-menu-line"></div>
+        <ul class="hero-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="index.html#brands">Brands</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="hero-contact-btn">
+        <span class="hero-contact-dot"></span>
+        CONTACT
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== ABOUT HERO ===== -->
+  <section class="about" id="about">
+      <div class="about__inner">
+      <h1 class="about__hero"><span>ABOUT</span></h1>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT GRID ===== -->
+  <section class="about-grid">
+    <div class="about-grid__inner">
+      <div class="about-grid__col">
+        <div class="about-grid__text">
+          <p class="about__label">DESCRIPTION</p>
+          <p class="about__text">
+            Soy Camila Jaramillo, content creator y especialista en UGC.
+            Trabajo con marcas globales para crear contenido auténtico que
+            conecta con audiencias reales. Mi enfoque combina narrativa visual,
+            branding estratégico y una sensibilidad estética que transforma
+            ideas en historias memorables.
+          Con más de 5 años de experiencia en la industria creativa, he
+          colaborado con marcas como L'Oréal, Nike y Spotify. Mi trabajo
+          abarca desde campañas digitales hasta contenido editorial,
+          siempre con una mirada puesta en la autenticidad y el impacto.</p>
+        </div>
+      </div>
+      <div class="about-grid__col about-grid__col--image">
+        <div class="about-grid__image">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&auto=format" alt="Camila Jaramillo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT EXTRA ===== -->
+  <section class="about-extra">
+    <div class="about-extra__inner">
+      <p class="about-extra__text">
+        Cada proyecto es una oportunidad para crear algo único. Creo en el
+        poder de las historias bien contadas y en la belleza de lo simple.
+        Si compartes esa visión, me encantaría trabajar contigo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col footer-col--info">
+          <p class="footer-address">Cl. 10 # 2-43</p>
+          <p class="footer-address">Bogotá, Colombia</p>
+          <a href="mailto:hola@camilajaramillo.com" class="footer-email">hola@camilajaramillo.com</a>
+        </div>
+        <nav class="footer-col footer-col--nav">
+          <a href="index.html" class="footer-nav-link">Home</a>
+          <a href="about.html" class="footer-nav-link">About</a>
+          <a href="project.html" class="footer-nav-link">Projects</a>
+          <a href="contact.html" class="footer-nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-middle">
+        <p class="footer-copy">&copy; 2026 Camila Jaramillo. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link">Instagram</a>
+          <a href="#" class="footer-social-link">LinkedIn</a>
+          <a href="#" class="footer-social-link">Dribbble</a>
+          <a href="#" class="footer-social-link">Behance</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-masthead">Camila Jaramillo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('.hero-nav-inner');
+    window.addEventListener('scroll', () => {
+      nav.style.background = window.scrollY > 80 ? 'rgba(0,0,0,0.7)' : 'transparent';
+      nav.style.backdropFilter = window.scrollY > 80 ? 'blur(12px)' : 'none';
+      nav.style.borderBottom = window.scrollY > 80 ? '1px solid rgba(255,255,255,0.05)' : 'none';
+    });
+  </script>
+
+</body>
+</html>
