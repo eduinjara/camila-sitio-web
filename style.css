@@ -1454,7 +1454,7 @@ img {
   }
 
   .contact {
-    padding: 100px 16px 20px;
+    padding: 60px 16px 20px;
   }
 
   .about,
@@ -1467,6 +1467,14 @@ img {
   .about__hero,
   .project__hero {
     font-size: clamp(4rem, 14vw, 6rem);
+  }
+
+  .about__hero {
+    padding-top: 30px;
+  }
+
+  .project__hero {
+    padding-top: 30px;
   }
 
   .contact__hero span,
@@ -1534,16 +1542,22 @@ img {
   }
 
   .hero-futuristic {
-    padding: 0 16px 80px;
+    padding: 0 16px 60px;
   }
 
   .hero-bg-text {
-    font-size: clamp(4rem, 14vw, 8rem);
+    font-size: clamp(5rem, 16vw, 9rem);
+  }
+
+  .hero-image-stack {
+    width: 200px;
+    height: 290px;
   }
 
   .about-text {
     font-size: clamp(1.2rem, 4vw, 1.6rem);
-    padding: 0 16px;
+    max-width: 100%;
+    padding: 0;
   }
 
   .section-title,
