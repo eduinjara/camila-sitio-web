@@ -1453,8 +1453,13 @@ img {
     padding: 16px 20px;
   }
 
+  .stats .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .contact {
-    padding: 60px 16px 20px;
+    padding: 0 16px;
   }
 
   .about,
@@ -1470,11 +1475,11 @@ img {
   }
 
   .about__hero {
-    padding-top: 30px;
+    padding-top: 62px;
   }
 
   .project__hero {
-    padding-top: 30px;
+    padding-top: 62px;
   }
 
   .contact__hero span,
@@ -1539,6 +1544,10 @@ img {
     grid-template-columns: 1fr;
     gap: 16px;
     padding: 40px 0;
+  }
+
+  .card {
+    aspect-ratio: 3 / 4;
   }
 
   .hero-futuristic {
